@@ -2,7 +2,7 @@
 
 A prototyping board based on Atmel 32u4 microcontroller. 
 
-![alpha](images/alpha-board_v2.jpg?raw=true "board")
+![alpha](images/alpha_board_v2.jpg?raw=true "board")
 
 
 - Atmel 32u4 IC

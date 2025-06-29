@@ -1,26 +1,28 @@
+/**
+ * Title: LEDs Test
+ * Description: Cycles through the Red, Yellow and Green onboard LEDS one at a time at 1 second interval
+ */
 
-#define RED 13
-#define YELLOW 12
-#define GREEN 11
+#include "alpha.h"
 
 void setup() {
-  pinMode(RED, OUTPUT);
-  pinMode(YELLOW, OUTPUT);
-  pinMode(GREEN, OUTPUT);
+  pinMode(AL_LED_RED, OUTPUT);
+  pinMode(AL_LED_YELLOW, OUTPUT);
+  pinMode(AL_LED_GREEN, OUTPUT);
   
 }
 
 void loop() {
-  digitalWrite(RED, HIGH);
-  digitalWrite(YELLOW, LOW);
-  digitalWrite(GREEN, LOW);
+  digitalWrite(AL_LED_RED, HIGH);
+  digitalWrite(AL_LED_YELLOW, LOW);
+  digitalWrite(AL_LED_GREEN, LOW);
   delay(1000);
-  digitalWrite(RED, LOW);
-  digitalWrite(YELLOW, HIGH);
-  digitalWrite(GREEN, LOW);
+  digitalWrite(AL_LED_RED, LOW);
+  digitalWrite(AL_LED_YELLOW, HIGH);
+  digitalWrite(AL_LED_GREEN, LOW);
   delay(1000);
-  digitalWrite(RED, LOW);
-  digitalWrite(YELLOW, LOW);
-  digitalWrite(GREEN, HIGH);
+  digitalWrite(AL_LED_RED, LOW);
+  digitalWrite(AL_LED_YELLOW, LOW);
+  digitalWrite(AL_LED_GREEN, HIGH);
   delay(1000);   
 }

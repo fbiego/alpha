@@ -1,6 +1,7 @@
 name: PR Checks
 
 on:
+  push:
   pull_request:
     branches:
       - main  # or your default branch

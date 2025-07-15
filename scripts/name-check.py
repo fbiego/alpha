@@ -2,8 +2,10 @@ import os
 import re
 import sys
 
-# Customize as needed
-SKETCH_DIR = "../examples"
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+SKETCH_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, "../examples"))
+
 BANNED_WORDS = ["alpha", "alpha-board", "alpha_board", "alpha board"]
 MAX_WORDS = 3
 VALID_NAME_REGEX = re.compile(r'^[a-z0-9]+(-[a-z0-9]+){0,2}$')  # 1 to 3 lowercase words, separated by -

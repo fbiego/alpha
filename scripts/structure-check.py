@@ -2,7 +2,9 @@ import os
 import re
 import sys
 
-EXAMPLES_DIR = "../examples"
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+EXAMPLES_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, "../examples"))
 
 # Required header pattern
 HEADER_PATTERN = re.compile(

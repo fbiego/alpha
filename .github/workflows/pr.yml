@@ -1,11 +1,9 @@
 name: PR Checks
 
 on:
-  push:
   pull_request:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * 3'
+    branches:
+      - main  # or your default branch
 
 jobs:
   Linux-Checks:

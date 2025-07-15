@@ -1,0 +1,21 @@
+name: PR Checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 3'
+
+jobs:
+  Linux-Checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v1
+
+      - name: Name Check
+        run: python3 scripts/name-check.py
+
+      - name: Structure Check
+        run: python3 scripts/structure-check.py

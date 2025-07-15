@@ -8,7 +8,7 @@ on:
     - cron: '0 0 * * 3'
 
 jobs:
-  Linux:
+  Linux Checks:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

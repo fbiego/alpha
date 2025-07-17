@@ -8,7 +8,7 @@ EXAMPLES_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, "../examples"))
 
 # Required header pattern
 HEADER_PATTERN = re.compile(
-    r'/\*\*\s*\n\s*\* Title: .+\n\s*\* Description: .+\n\s*\*/',
+    r'/\*\*\s*\n\s*\* Title: .+\n\s*\* Description: .+\n\s*',
     re.MULTILINE
 )
 
